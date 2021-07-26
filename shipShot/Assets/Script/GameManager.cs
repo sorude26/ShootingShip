@@ -13,4 +13,8 @@ public class GameManager : MonoBehaviour
     {
         Debug.Log(score);
     }
+    public void GameOver()
+    {
+        EventManager.GameEnd();
+    }
 }
