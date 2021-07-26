@@ -7,9 +7,11 @@ public class ShowScore : MonoBehaviour
 {
     [SerializeField]
     Text currentScore;
+    [SerializeField]
+    string text;
 
     public void PrintScore(int score)
     {
-        currentScore.text = "Score:" + score;
+        currentScore.text = text + score;
     }
 }
