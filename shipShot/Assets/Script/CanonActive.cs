@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Canon : MonoBehaviour
+public class CanonActive : MonoBehaviour
 {
     [SerializeField] GameObject m_shellPrefab = default;
     [SerializeField] Transform m_muzzle = default;
