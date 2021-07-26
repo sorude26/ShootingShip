@@ -2,18 +2,35 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class StraightMove : MonoBehaviour
+public class StraightMove : MoveControl
 {
-    [SerializeField] float Speed = 5f;
-    Rigidbody2D Rb = default;
-    // Start is called before the first frame update
+    [SerializeField] float m_speed = 5f;
+    Rigidbody2D m_rb = default;
+    bool m_move;
     void Start()
     {
-        Rb = GetComponent<Rigidbody2D>();
+        m_rb = GetComponent<Rigidbody2D>();
+        StartSet();
     }
     private void Update()
     {
-        
-        Rb.velocity = this.transform.up * Speed;
+        if (!m_move)
+        {
+            m_rb.velocity = Vector2.zero;
+            return;
+        }
+        m_rb.velocity = this.transform.up * m_speed;
     }
+
+    public override void MoveStop()
+    {
+        m_move = false;
+        m_rb.velocity = Vector2.zero;
+    }
+
+    protected override void StartSet()
+    {
+        m_move = true;
+    }
+
 }

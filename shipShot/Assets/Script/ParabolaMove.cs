@@ -2,14 +2,32 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class ParabolaMove : MonoBehaviour
+public class ParabolaMove : MoveControl
 {
-    [SerializeField] float Speed = 5f;
-    Rigidbody2D Rb = default;
-    // Start is called before the first frame update
+    [SerializeField] float m_speed = 5f;
+    Rigidbody2D m_rb = default;
+    bool m_move;
     void Start()
     {
-        Rb = GetComponent<Rigidbody2D>();
-        Rb.velocity = this.transform.up * Speed;
+        m_rb = GetComponent<Rigidbody2D>();
+        StartSet();
+    }
+    private void Update()
+    {
+        if (!m_move)
+        {
+            m_rb.velocity = Vector2.zero;
+        }
+    }
+    public override void MoveStop()
+    {
+        m_move = false;
+        m_rb.velocity = Vector2.zero;
+    }
+
+    protected override void StartSet()
+    {
+        m_move = true;
+        m_rb.velocity = this.transform.up * m_speed;
     }
 }

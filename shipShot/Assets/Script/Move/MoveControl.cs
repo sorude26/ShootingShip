@@ -8,7 +8,11 @@ public abstract class MoveControl : MonoBehaviour
     {
         EventManager.OnGameEnd += MoveStop;
     }
+    private void OnDisable()
+    {
+        EventManager.OnGameEnd -= MoveStop;
+    }
     protected abstract void StartSet();
-    protected abstract void MoveStop();
+    public abstract void MoveStop();
 
 }

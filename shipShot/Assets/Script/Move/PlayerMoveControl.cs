@@ -27,7 +27,7 @@ public class PlayerMoveControl : MoveControl
         m_rB.velocity = new Vector2(h * m_moveSpeed, 0);
     }
 
-    protected override void MoveStop()
+    public override void MoveStop()
     {
         m_rB.velocity = Vector2.zero;
         m_move = false;
