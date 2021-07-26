@@ -157,6 +157,9 @@ MonoBehaviour:
   - {fileID: 1293650953}
   - {fileID: 1410632499}
   - {fileID: 748778124}
+  - {fileID: 1909112787}
+  - {fileID: 560362174}
+  - {fileID: 582937559}
   m_spwanObjects:
   - {fileID: 4273431632964543392, guid: 1d2085c9705c7e046a432209933dab97, type: 3}
 --- !u!4 &14857678
