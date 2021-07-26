@@ -10,7 +10,10 @@ public class StraightMove : MonoBehaviour
     void Start()
     {
         Rb = GetComponent<Rigidbody2D>();
+    }
+    private void Update()
+    {
+        
         Rb.velocity = this.transform.up * Speed;
     }
-
 }
