@@ -19,6 +19,6 @@ public class RemoveScore : MonoBehaviour
     IEnumerator Remove()
     {
         yield return new WaitForSeconds(interval);
-        score.currentScore.text = "";
+        Destroy(this);
     }
 }
