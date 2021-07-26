@@ -353,14 +353,14 @@ MonoBehaviour:
   m_spawnSpeed:
   - 1
   - 1
-  - 1
+  - 0.8
   - 0.6
   - 0.6
   - 1
   m_spawnTime:
   - 5
   - 5
-  - 2
+  - 3
   - 5
   - 5
   - 2
@@ -1223,6 +1223,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Canvas 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5118320062571946962, guid: 77fd7e23c77630b48853085fa01ea1f5,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5118320062653239461, guid: 77fd7e23c77630b48853085fa01ea1f5,
         type: 3}
@@ -2815,6 +2820,31 @@ PrefabInstance:
     - target: {fileID: 4616109014798523451, guid: 26c2b4193179fd240bc2573a599aa841,
         type: 3}
       propertyPath: m_SortingOrder
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4616109015595860029, guid: 26c2b4193179fd240bc2573a599aa841,
+        type: 3}
+      propertyPath: m_LocalScale.x
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4616109015595860029, guid: 26c2b4193179fd240bc2573a599aa841,
+        type: 3}
+      propertyPath: m_LocalScale.y
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4616109015595860029, guid: 26c2b4193179fd240bc2573a599aa841,
+        type: 3}
+      propertyPath: m_LocalScale.z
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4616109015595860030, guid: 26c2b4193179fd240bc2573a599aa841,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4616109015595860035, guid: 26c2b4193179fd240bc2573a599aa841,
+        type: 3}
+      propertyPath: m_Color.a
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4616109015725047948, guid: 26c2b4193179fd240bc2573a599aa841,
