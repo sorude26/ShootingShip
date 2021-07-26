@@ -14,5 +14,9 @@ public class ShotHit : MonoBehaviour
             Destroy(collision);
             Destroy(this.gameObject);
         }
+        if (collision.tag == "Player")
+        {
+            GameManager.Instance.GameOver();
+        }
     }
 }
