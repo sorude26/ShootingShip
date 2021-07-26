@@ -15,7 +15,7 @@ GameObject:
   - component: {fileID: -9029123512198735055}
   m_Layer: 0
   m_Name: Cannonball
-  m_TagString: Untagged
+  m_TagString: Shot
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -117,7 +117,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c2ee9170330f0864cb5f5c29da18e0fe, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Speed: 5
+  Speed: 10
 --- !u!58 &-9029123512198735055
 CircleCollider2D:
   m_ObjectHideFlags: 0
