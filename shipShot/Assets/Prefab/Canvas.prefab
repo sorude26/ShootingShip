@@ -170,6 +170,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   currentScore: {fileID: 0}
+  text: 'Score:'
 --- !u!1 &540519871084455434
 GameObject:
   m_ObjectHideFlags: 0
