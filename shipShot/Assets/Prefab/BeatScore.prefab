@@ -45,7 +45,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 64f93e0b7505f22439f20d38b3db753a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  interval: 0
+  interval: 0.5
+  score: {fileID: 1725579036887206050}
 --- !u!1 &1725579036887206077
 GameObject:
   m_ObjectHideFlags: 0
@@ -114,7 +115,7 @@ MonoBehaviour:
       m_Calls: []
   m_FontData:
     m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
-    m_FontSize: 35
+    m_FontSize: 55
     m_FontStyle: 0
     m_BestFit: 0
     m_MinSize: 3
@@ -153,7 +154,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e90f0210a2ec1db4aa7b847477e81f34, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  currentScore: {fileID: 0}
+  currentScore: {fileID: 1725579036887206048}
   text: 
 --- !u!1 &1725579037475687302
 GameObject:

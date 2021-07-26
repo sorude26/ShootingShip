@@ -12,6 +12,6 @@ public class ReStartButton : MonoBehaviour
     }
     public void Restart()
     {
-        SceneManager.LoadScene("Nizuma");
+        SceneManager.LoadScene("GameScene");
     }
 }
