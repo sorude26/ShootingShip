@@ -4,16 +4,16 @@ using UnityEngine;
 
 public class CanonActive : MonoBehaviour
 {
-    [SerializeField] GameObject m_shellPrefab = default;
-    [SerializeField] Transform m_muzzle = default;
-    AudioSource m_audio = default;
-    [SerializeField] Transform m_Crosshair = default;
-    [SerializeField] float m_interval = 1f;
+    [SerializeField] GameObject ShellPrefab = default;
+    [SerializeField] Transform Muzzle = default;
+    AudioSource Audio = default;
+    [SerializeField] Transform Crosshair = default;
+    [SerializeField] float Interval = 1f;
     float m_timer;
     void Start()
     {
-        m_audio = GetComponent<AudioSource>();
-        m_timer = m_interval;
+        Audio = GetComponent<AudioSource>();
+        m_timer = Interval;
     }
 
     void Update()
@@ -21,14 +21,14 @@ public class CanonActive : MonoBehaviour
         m_timer += Time.deltaTime;
         if (Input.GetButtonDown("Fire1"))
         {
-            if (m_timer > m_interval)
+            if (m_timer > Interval)
             {
                 m_timer = 0;
-                Instantiate(m_shellPrefab, m_muzzle.position, this.transform.rotation);
+                Instantiate(ShellPrefab, Muzzle.position, this.transform.rotation);
             }
 
         }
-        Vector2 x = m_Crosshair.transform.position - this.transform.position;
+        Vector2 x = Crosshair.transform.position - this.transform.position;
         this.transform.up = x;
     }
 }

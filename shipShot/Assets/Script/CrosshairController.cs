@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class CrosshairController : MonoBehaviour
 {
+    [SerializeField] GameObject Seaconon;
+    [SerializeField] GameObject Skyconon;
     void Start()
     {
         // マウスカーソルを消す
@@ -17,5 +19,15 @@ public class CrosshairController : MonoBehaviour
         Vector3 mousePosition = Camera.main.ScreenToWorldPoint(Input.mousePosition);
         mousePosition.z = 0;    // Z 座標がカメラと同じになっているので、リセットする
         this.transform.position = mousePosition;
+        if (this.transform.position.y < 0f)
+        {
+            Skyconon.SetActive(false);
+            Seaconon.SetActive(true);
+        }
+        if (this.transform.position.y > 0f)
+        {
+            Skyconon.SetActive(true);
+            Seaconon.SetActive(false);
+        }
     }
 }
