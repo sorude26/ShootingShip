@@ -9,4 +9,8 @@ public class GameManager : MonoBehaviour
     {
         Instance = this;
     }
+    public void GetScore(int score)
+    {
+        Debug.Log(score);
+    }
 }
