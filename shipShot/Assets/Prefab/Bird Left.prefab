@@ -15,6 +15,7 @@ GameObject:
   - component: {fileID: 4718688676564574803}
   - component: {fileID: 4718688676564574812}
   - component: {fileID: 2972454509906622730}
+  - component: {fileID: 2267162256887680305}
   m_Layer: 0
   m_Name: Bird Left
   m_TagString: Untagged
@@ -119,7 +120,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1aa0083270300b248beea4f905a29df7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_speed: 5
+  m_speed: 3
   Dir: {x: -1, y: 0}
 --- !u!61 &4718688676564574803
 BoxCollider2D:
@@ -159,8 +160,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1c01ae876be87c544958aa1e8dc8fbbe, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_score: 100
+  m_score: 300
   m_explosion: {fileID: 7839111975041660794, guid: 8c1005fe1471cb64c8c79a4a80b2ecc0,
+    type: 3}
+  m_dropItem: {fileID: 3719953855935832869, guid: 64a3ce566e32bcf41b430c6f8276cf4d,
     type: 3}
 --- !u!114 &2972454509906622730
 MonoBehaviour:
@@ -174,3 +177,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f470d9c6224b8b14e8fce6d7da809348, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &2267162256887680305
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4718688676564574806}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 20cc15fc12ad84b4b9c56463b37209fe, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  enemyCannon: {fileID: 4273431632964543392, guid: 1d2085c9705c7e046a432209933dab97,
+    type: 3}
+  shotInterval: 1

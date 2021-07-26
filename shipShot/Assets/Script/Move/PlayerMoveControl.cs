@@ -22,7 +22,11 @@ public class PlayerMoveControl : MoveControl
     
     void Update()
     {
-        if (!m_move) { return; }
+        if (!m_move) 
+        {
+            transform.rotation = Quaternion.Euler(0, 0, 30);
+            return; 
+        }
         float h = Input.GetAxisRaw("Horizontal");
         m_rB.velocity = new Vector2(h * m_moveSpeed, 0);
     }

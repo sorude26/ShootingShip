@@ -6,7 +6,7 @@ public class SeaStopper : MonoBehaviour
 {
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.tag == "SeaSurface")
+        if (collision.tag == "SeaSurface ")
         {
             var move = this.gameObject.GetComponent<MoveControl>();
             move.MoveStop();
