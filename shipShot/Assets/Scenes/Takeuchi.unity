@@ -212,8 +212,8 @@ MonoBehaviour:
   - 1
   - 1
   m_spawnTime:
-  - 3
-  - 3
+  - 5
+  - 5
   - 2
   m_enemySpwanCon:
   - {fileID: 2107922625}

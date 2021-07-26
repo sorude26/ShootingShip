@@ -12,6 +12,11 @@ public class ShowScore : MonoBehaviour
 
     public void PrintScore(int score)
     {
+        if (score == 0)
+        {
+            currentScore.text = "";
+            return;
+        }
         currentScore.text = text + score;
     }
 }

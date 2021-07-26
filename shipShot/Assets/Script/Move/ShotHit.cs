@@ -18,10 +18,16 @@ public class ShotHit : MonoBehaviour
             e.SetScore(m_score);
             Destroy(collision);
             Destroy(this.gameObject);
+            return;
         }
         if (collision.tag == "Player")
         {
-            GameManager.Instance.GameOver();
+            GameManager.Instance.PlayerDamge(); 
+            var e = Instantiate(m_explosion);
+            e.SetScore(0);
+            e.gameObject.transform.position = this.transform.position;
+            Destroy(this.gameObject);
+            return;
         }
     }
 }
