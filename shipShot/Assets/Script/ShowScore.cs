@@ -6,7 +6,7 @@ using UnityEngine.UI;
 public class ShowScore : MonoBehaviour
 {
     [SerializeField]
-    Text currentScore;
+    public Text currentScore;
     [SerializeField]
     string text;
 
