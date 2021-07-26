@@ -30,6 +30,6 @@ public class PlayerMoveControl : MoveControl
     protected override void MoveStop()
     {
         m_rB.velocity = Vector2.zero;
-        m_move = true;
+        m_move = false;
     }
 }

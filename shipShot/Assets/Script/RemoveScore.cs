@@ -7,18 +7,22 @@ public class RemoveScore : MonoBehaviour
     [SerializeField]
     float interval;
 
+    [SerializeField]
     ShowScore score;
 
     // Start is called before the first frame update
-    void Start()
-    {
-        score = GetComponent<ShowScore>();
-        StartCoroutine(Remove());
-    }
 
+    public void SetScore(int score)
+    {
+        if (this.score)
+        {
+            this.score.PrintScore(score);
+            StartCoroutine(Remove());
+        }
+    }
     IEnumerator Remove()
     {
         yield return new WaitForSeconds(interval);
-        Destroy(this);
+        Destroy(this.gameObject);
     }
 }
