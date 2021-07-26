@@ -10,7 +10,7 @@ public class ShipControl : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        Rb = GetComponent<Rigidbody2D>(); 
+        Rb = GetComponent<Rigidbody2D>();
     }
 
     // Update is called once per frame
