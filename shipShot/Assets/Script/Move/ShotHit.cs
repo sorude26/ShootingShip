@@ -18,7 +18,7 @@ public class ShotHit : MonoBehaviour
             e.SetScore(m_score);
             if (m_dropItem)
             {
-                int r = Random.Range(0, 5);
+                int r = Random.Range(0, 9);
                 if (r > 2)
                 {
                     Instantiate(m_dropItem).transform.position = this.transform.position;
