@@ -8,7 +8,7 @@ public class EnemySpawnControl : MonoBehaviour
     [SerializeField] float[] m_spawnTime;
     [SerializeField] SpawnControl[] m_enemySpwanCon;
     float[] Timers;
-    bool m_spawn;
+    bool m_spawn = true;
     private void Start()
     {
         EventManager.OnGameEnd += StopSpawn;

@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 2303628626517959916}
   - component: {fileID: -9029123512198735055}
   - component: {fileID: -7952918251603391630}
+  - component: {fileID: -8758688154701433435}
   m_Layer: 0
   m_Name: Cannonball
   m_TagString: Shot
@@ -134,3 +135,15 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Speed: 10
+--- !u!114 &-8758688154701433435
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2303628626517959904}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f470d9c6224b8b14e8fce6d7da809348, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
