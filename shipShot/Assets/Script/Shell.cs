@@ -10,8 +10,8 @@ public class Shell : MonoBehaviour
     void Start()
     {
         // Rigidbody を取得して発射する
-        Rigidbody2D rb = GetComponent<Rigidbody2D>();
-        rb.velocity = this.transform.up * m_initialSpeed;
+        Rigidbody2D Rb = GetComponent<Rigidbody2D>();
+        Rb.velocity = this.transform.up * m_initialSpeed;
     }
 
     void Update()
@@ -21,15 +21,5 @@ public class Shell : MonoBehaviour
         {
             Destroy(this.gameObject);
         }
-    }
-
-    private void OnTriggerEnter2D(Collider2D collision)
-    {
-        if (collision.gameObject.tag == "Ground" || collision.gameObject.tag == "Rock" || collision.gameObject.tag == "Shell")
-        {
-            Instantiate(m_effectPrefab, this.transform.position, this.transform.rotation);
-        }
-        // 何かにぶつかったら自分自身を破棄する
-        Destroy(this.gameObject);
     }
 }
