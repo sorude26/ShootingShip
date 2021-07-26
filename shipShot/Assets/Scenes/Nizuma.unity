@@ -217,6 +217,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_socreView: {fileID: 0}
+  m_life: {fileID: 0}
+  m_gameOverUI: {fileID: 0}
 --- !u!4 &132295761
 Transform:
   m_ObjectHideFlags: 0
@@ -554,10 +556,25 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 4616109014798523446, guid: 26c2b4193179fd240bc2573a599aa841,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4616109014798523447, guid: 26c2b4193179fd240bc2573a599aa841,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4616109015725047948, guid: 26c2b4193179fd240bc2573a599aa841,
         type: 3}
       propertyPath: m_Name
       value: Game OverUI
+      objectReference: {fileID: 0}
+    - target: {fileID: 4616109015725047948, guid: 26c2b4193179fd240bc2573a599aa841,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4616109015725047955, guid: 26c2b4193179fd240bc2573a599aa841,
         type: 3}
@@ -801,6 +818,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Canvas
+      objectReference: {fileID: 0}
+    - target: {fileID: 5118320062571946962, guid: 77fd7e23c77630b48853085fa01ea1f5,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 77fd7e23c77630b48853085fa01ea1f5, type: 3}
