@@ -10,14 +10,20 @@ public class CanonActive : MonoBehaviour
     [SerializeField] Transform Crosshair = default;
     [SerializeField] float Interval = 1f;
     float m_timer;
+    bool m_stop;
     void Start()
     {
         Audio = GetComponent<AudioSource>();
         m_timer = Interval;
+        EventManager.OnGameEnd += Stop;
     }
 
     void Update()
     {
+        if (m_stop)
+        {
+            return;
+        }
         m_timer += Time.deltaTime;
         if (Input.GetButtonDown("Fire1"))
         {
@@ -30,5 +36,9 @@ public class CanonActive : MonoBehaviour
         }
         Vector2 x = Crosshair.transform.position - this.transform.position;
         this.transform.up = x;
+    }
+    private void Stop()
+    {
+        m_stop = true;
     }
 }

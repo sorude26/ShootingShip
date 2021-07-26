@@ -3,20 +3,37 @@ using System.Collections.Generic;
 using UnityEngine;
 
 [RequireComponent(typeof(Rigidbody2D))]
-public class SelectDirMove : MonoBehaviour
-{
-    [SerializeField] float Speed = 5f;
-    Rigidbody2D Rb = default;
+public class SelectDirMove : MoveControl
+{ 
+    [SerializeField] float m_speed = 5f;
+    Rigidbody2D m_rb = default;
     [SerializeField] Vector2 Dir = new Vector2(1f, 0f);
-    // Start is called before the first frame update
+    bool m_move;
     void Start()
     {
-        Rb = GetComponent<Rigidbody2D>();
+        m_rb = GetComponent<Rigidbody2D>();
+        StartSet();
     }
 
-    // Update is called once per frame
     void Update()
     {
-        Rb.velocity =Speed * Dir;
+        if (!m_move)
+        {
+            m_rb.velocity = Vector2.zero;
+            return; 
+        }
+        m_rb.velocity =m_speed * Dir;
     }
+
+    public override void MoveStop()
+    {
+        m_move = false;
+        m_rb.velocity = Vector2.zero;
+    }
+
+    protected override void StartSet()
+    {
+        m_move = true;
+    }
+
 }

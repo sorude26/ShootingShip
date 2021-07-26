@@ -126,7 +126,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_score: 100
-  m_explosion: {fileID: 48060435787950562, guid: 1dd3d1b47b15c334f80a1d1fb9b09fcb,
+  m_explosion: {fileID: 7839111975041660794, guid: 8c1005fe1471cb64c8c79a4a80b2ecc0,
     type: 3}
 --- !u!114 &5484809042570358561
 MonoBehaviour:
@@ -152,7 +152,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c2ee9170330f0864cb5f5c29da18e0fe, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Speed: 1
+  m_speed: 1
 --- !u!50 &5484809042570358559
 Rigidbody2D:
   serializedVersion: 4
